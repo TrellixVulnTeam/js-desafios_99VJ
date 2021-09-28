@@ -22,6 +22,7 @@ do{
 
 }while(!valid);
 
+document.write (`<br>`);
 document.write (`CANTIDAD DE NUMEROS: ${cantidadNumeros} <br>`);
 document.write (`<br>`);
 document.write (`Ingresando valores...<br>`);

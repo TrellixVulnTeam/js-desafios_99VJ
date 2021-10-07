@@ -139,7 +139,48 @@ function ordenarMayorMenor(){
 }
 
 function ordenarPalo(){
-  mazo.sort
+  let espadas = [];
+  let bastos = [];
+  let oros = [];
+  let copas = [];
+  
+  for (let i=0 ; i<mazo.length; i++){
+
+    switch (mazo[i].palo){
+      case "espada":
+        espadas.push(mazo[i]);
+        break;
+      case "basto":
+        bastos.push(mazo[i]);
+        break;
+      case "oro":
+        oros.push(mazo[i]);
+        break;
+      case "copa":
+        copas.push(mazo[i]);
+        break;
+    }
+    
+  }
+
+  mazo = [];
+
+  for (let i = 0 ; i < espadas.length ; i++){
+    mazo.push(espadas[i]);
+  }
+
+  for (let i = 0 ; i < bastos.length ; i++){
+    mazo.push(bastos[i]);
+  }
+
+  for (let i = 0 ; i < oros.length ; i++){
+    mazo.push(oros[i]);
+  }
+
+  for (let i = 0 ; i < copas.length ; i++){
+    mazo.push(copas[i]);
+  }
+  
   console.log("MAZO ORDENADO POR PALO:");
   console.table(mazo);
 }

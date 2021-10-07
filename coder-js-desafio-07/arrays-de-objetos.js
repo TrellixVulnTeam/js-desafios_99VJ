@@ -122,7 +122,7 @@ for (i=0; i<3; i++){
   let CartaRobada1 = Mazo.splice(random1, 1);
   
   // agrego esa carta a la mano del jugador1
-  ManoJugador1.push(CartaRobada1);
+  ManoJugador1.push(CartaRobada1[0]);
   
   
   // JUGADOR 2:
@@ -134,7 +134,7 @@ for (i=0; i<3; i++){
   let CartaRobada2 = Mazo.splice(random2, 1);
 
   // agrego esa carta a la mano del jugador2
-  ManoJugador2.push(CartaRobada2);
+  ManoJugador2.push(CartaRobada2[0]);
   
 }
 console.log(" ");

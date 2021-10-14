@@ -1,0 +1,95 @@
+.section{
+
+  // secciones de manos de cartas
+  &-cartas{
+
+    background-color: $cyan-1;
+    height: 20vh;
+
+  }
+
+  // seccion donde se juegan las cartas
+  &-mesa{
+
+    background-color: $dark-grey;
+    height: 20vh;
+
+
+  }
+
+  // user interface, seccion de abajo
+  &-ui{
+    
+    background-color: $cyan-2;
+    height: 20vh;
+    
+    // botones
+    .button{
+      
+      // truco y envido
+      &-canto{
+        height: 30px;
+        width: 140px;
+        margin-top: 10px;
+        border-radius: 25px;
+        border-width: 2px;
+        border-color: $dark-grey;
+        color: #FFF;
+        background-color:$dark-grey;
+      }
+
+      // repartir cartas, nuevo juego, etc
+      &-acciones{
+        height: 30px;
+        width: 140px;
+        margin-top: 10px;
+        border-radius: 25px;
+        border-width: 2px;
+        border-color: $dark-grey;
+        color: $dark-grey;
+        background-color:$cyan-2;
+        
+        
+      }
+      
+      &:hover{
+        cursor: pointer;
+        background-color: $cyan-1;
+        color: $dark-grey;
+      }
+     
+    }
+
+    // estilos de botones desabilitados 
+    .btn-disabled{
+      cursor:unset;
+      background-color: $dark-grey;
+      color: $light-grey;
+
+      &:hover{
+        cursor:unset;
+        background-color: $dark-grey;
+        color: $light-grey;
+      }
+
+    }
+
+  }
+
+  &-img-card{
+    height: 60%;
+    margin-inline:20px;
+    
+    &-animate:hover{
+        cursor: pointer;
+        transform: scale(1.5);
+        border-style: dashed;
+        border-width: 2px;
+        border-radius: 5px;
+        border-color: $light-grey;
+    }
+
+  }
+
+
+}

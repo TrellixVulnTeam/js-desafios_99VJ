@@ -115,13 +115,6 @@ function generarTartaglia(pisosParam, cabeceraParam){
     
   }
 
-
-  // Print de resultados:
-
-  // dejo el mensaje de refrescar por encima de la pirámide
-  // document.write("Refrescá el explorador para volver a intentarlo...<br>");
-  // document.write("<br>");
-
   // muestra la pirámide
 
   // recorro las filas del segundo elemento al ante-ultimo 

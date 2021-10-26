@@ -123,12 +123,9 @@ function generarTartaglia(pisosParam, cabeceraParam){
 
     let divPrint = document.getElementById('div-print');
     let divLine = document.createElement("div");
-
-    let bgRandomDiv = colorRandom();
     
     divPrint.appendChild(divLine);
-    divLine.style.backgroundColor=bgRandomDiv;
-    
+
     for (let y = 1 ; y <= tartagliaRow[x].length-2 ; y++){
       
       let bgRandomSpan = colorRandom();
